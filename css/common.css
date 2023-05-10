@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item-task-03 {
+  display: flex;
+  justify-content: center;
+}
+
+.img-task-03 {
+  width: 30%;
+  margin-bottom: 20px;
+}
