@@ -9,7 +9,7 @@ const textEl = inpEl.addEventListener('change', () => {
 })
 
 const validEl = inpEl.addEventListener('blur', () => {
-    if (text.length <= maxLength) {
+    if (text.length === maxLength) {
         inpEl.classList.remove('invalid');
         inpEl.classList.add('valid');
     } else {

@@ -28,12 +28,8 @@ function destroyBoxes() {
 boxEl.innerHTML = '';
 }
 
-const input = inputEl.addEventListener('input', () => {
-  amount = inputEl.value;
-})
-
 const create = btnCrEl.addEventListener('click', () => {
-  createBoxes(amount);
+  createBoxes(inputEl.value);
 })
 
 const destroy = btnDestrEl.addEventListener('click', () => {

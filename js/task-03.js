@@ -15,17 +15,7 @@ const images = [
 
 const listEl = document.querySelector('ul');
 const markup = images.map((image => {
-  return `<li><img src="${image.url}" alt="${image.alt}"></li>`
+  return `<li class="item-task-03"><img src="${image.url}" alt="${image.alt}" class="img-task-03"></li>`
 })).join('');
 
 listEl.insertAdjacentHTML('beforeend', markup);
-
-const liEl = listEl.querySelectorAll('li');
-liEl.forEach(item => {
-  item.classList.add('item-task-03');
-})
-
-const imgEl = listEl.querySelectorAll('img');
-imgEl.forEach(item => {
-  item.classList.add('img-task-03');
-})
